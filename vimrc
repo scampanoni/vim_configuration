@@ -149,6 +149,8 @@ let g:airline#extensions#tabline#enabled = 1
 " => YouCompleteMe
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 :hi Pmenu ctermfg=16 ctermbg=144  
+let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_autoclose_preview_window_after_completion = 1
 nnoremap ,def :YcmCompleter GoToDefinitionElseDeclaration<CR>
 nnoremap ,ref :YcmCompleter GoToReferences<CR>
 nnoremap ,doc :YcmCompleter GetDoc<CR>
