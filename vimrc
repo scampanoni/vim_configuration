@@ -148,6 +148,7 @@ let g:airline#extensions#tabline#enabled = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => YouCompleteMe
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+:hi Pmenu ctermfg=16 ctermbg=144  
 nnoremap ,def :YcmCompleter GoToDefinitionElseDeclaration<CR>
 nnoremap ,ref :YcmCompleter GoToReferences<CR>
 nnoremap ,doc :YcmCompleter GetDoc<CR>
