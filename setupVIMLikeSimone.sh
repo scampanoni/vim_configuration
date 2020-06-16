@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 
 # Copy vimrc
 cp vimrc ~/.vimrc ;
