@@ -30,3 +30,6 @@ pushd ./ ;
 cd ~/.vim/bundle/YouCompleteMe
 python3 install.py --all
 popd ;
+
+# Install all plugins
+vim +PluginInstall +qall ;
