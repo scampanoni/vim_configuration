@@ -28,7 +28,7 @@ popd ;
 # Install YouCompleteMe
 pushd ./ ;
 cd ~/.vim/bundle/YouCompleteMe
-python3 install.py --all
+./install.py --clangd-completer
 popd ;
 
 # Install all plugins
