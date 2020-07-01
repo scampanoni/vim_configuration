@@ -155,6 +155,9 @@ nnoremap ,def :YcmCompleter GoToDefinitionElseDeclaration<CR>
 nnoremap ,ref :YcmCompleter GoToReferences<CR>
 nnoremap ,doc :YcmCompleter GetDoc<CR>
 
+" Formatting the C/C++ code
+map <F7> gg=G<C-o><C-o> 
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
