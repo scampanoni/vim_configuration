@@ -3,7 +3,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Sets how many lines of history VIM has to remember
-set history=500
+set history=1000
 
 " Enable filetype plugins
 filetype plugin on
@@ -27,6 +27,9 @@ set backspace=indent,eol,start
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" Enable spellchecking
+set spell
+
 " Set 7 lines to the cursor - when moving vertically using j/k
 set so=7
 
@@ -36,11 +39,17 @@ set cmdheight=1
 " Always show current position
 set ruler
 
+" Always display the status bar
+set laststatus=2
+
 " Keep 1 lines below and above the cursor
 set scrolloff=1
 
 " Wrap lines
 set wrap
+
+" Avoid wrapping a line in the middle of a word.
+set linebreak
 
 " Ignore case when searching
 set ignorecase
