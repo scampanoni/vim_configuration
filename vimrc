@@ -29,6 +29,7 @@ set backspace=indent,eol,start
 
 " Enable spellchecking
 set spell
+setlocal spell spelllang=en_us
 
 " Set 7 lines to the cursor - when moving vertically using j/k
 set so=7
