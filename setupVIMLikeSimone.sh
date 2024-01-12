@@ -6,9 +6,11 @@ if ! command -v cmake &> /dev/null ; then
 fi
 
 # Copy vimrc
+echo "Copy vimrc"
 cp vimrc ~/.vimrc ;
 
 # Clone Vundle
+echo "Clone Vundle"
 pushd ./ ;
 if ! test -d ~/.vim/bundle/Vundle.vim ; then 
   git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim ;
@@ -19,6 +21,7 @@ fi
 popd ;
 
 # Clone YouCompleteMe
+echo "Clone YouCompleteMe"
 pushd ./ ;
 if ! test -d ~/.vim/bundle/YouCompleteMe ; then
   git clone https://github.com/ycm-core/YouCompleteMe.git ~/.vim/bundle/YouCompleteMe
@@ -31,6 +34,7 @@ git submodule update --init --recursive
 popd ; 
 
 # Install YouCompleteMe
+echo "Install YouCompleteMe"
 pushd ./ ;
 cd ~/.vim/bundle/YouCompleteMe
 ./install.py --clangd-completer

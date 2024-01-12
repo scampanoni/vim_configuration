@@ -39,6 +39,9 @@ set ruler
 " Keep 1 lines below and above the cursor
 set scrolloff=1
 
+" Wrap lines
+set wrap
+
 " Ignore case when searching
 set ignorecase
 
